@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSoM9HgrTGLXgnm9mjzDY0194TPVx0mtw&sensor=true&libraries=places"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="static/js/script.js"></script>
+
+
+
+
+<body>     
+    <!-- top navbar -->
+	<nav class="navbar navbar-default">
+      <img class="logo" src="/static/img/instamap_logo.png" alt="InstaMap">
+        <div class="pull-right">
+          <ul>
+          <li class="about"><a href="http://alicianoel.github.io/projects"><h3>About</h3></a>
+          <li class="info"><a href="#"><h3>Info</h3></a>
+            <div id="info-box"><p>See what's going on anywhere in the world via Instagram! Click on the map or use the search bar to view instagram photos from any location.</p>
+      </ul>
+      </div>
+	</nav>
+
+      <!-- instagram panel-->
+  <div class="col-md-7" id="image-panel">
+    <div class="row" style="margin-left:10px">
+      <div id='photos'></div>
+    </div>
+  </div>
+
+
+      <!-- map panel -->
+	<div class="col-md-5 map" id="container-map">
+	  <div class="input-group">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button" id="searchButton">Search</button>
+        </span>
+        <input type="text" class="form-control" placeholder="Address" id="searchText">
+      </div>
+	  <div id='map-canvas'></div>
+	</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
