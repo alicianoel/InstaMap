@@ -209,7 +209,7 @@ function jsonLoad (json) {
     // $(event.target.children[1]).hide();
   }
    else{
-    alert("Instagram API limit exceeded, please login to Instahood with Instagram to see more photos");
+    alert("Instagram API limit exceeded");
   };
 }
 
